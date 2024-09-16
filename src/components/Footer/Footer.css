@@ -1,0 +1,86 @@
+/* Footer container */
+.footer__container {
+    width: 100%;
+    background-color: #FFE26E;
+    display: flex;
+    flex-direction: column;
+    padding: 20px; /* Added padding for spacing */
+    box-sizing: border-box; /* Ensure padding does not affect width */
+}
+
+/* Items container within the footer */
+.footer__items__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; /* Changed to space-around for more spacing */
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Align items to the start for consistent spacing */
+    margin-bottom: 20px; /* Added bottom margin for spacing between sections */
+}
+
+/* Help section */
+.footer__help__container,
+.footer__contact__container,
+.footer__social__link__container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; /* Added margin for spacing */
+}
+
+.footer__help__header,
+.footer__contact__header,
+.footer__social__link__header {
+    width: 100%;
+    text-align: center; /* Center text within header */
+    margin-bottom: 10px; /* Added margin for spacing */
+}
+
+.footer__help__header h1,
+.footer__contact__header h1,
+.footer__social__link__header h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0; /* Remove default margin */
+}
+
+/* Help links */
+.fotter__help__links,
+.footer__contacts,
+.footer__social__links {
+    width: 100%;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    list-style-type: none; /* Remove default list styles */
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+}
+
+/* Social links */
+.footer__social__links {
+    flex-direction: row; /* Arrange social links horizontally */
+    justify-content: center; /* Center social links horizontally */
+}
+
+.social__link {
+    width: 12%;
+    display: flex;
+    justify-content: center; /* Center icon within the link */
+    align-items: center; /* Center icon vertically */
+}
+
+/* Copyright section */
+.fotter__copyright__container {
+    width: 100%;
+    background-color: black;
+    color: #FFE26E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Added padding for spacing */
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center; /* Center text within the container */
+}

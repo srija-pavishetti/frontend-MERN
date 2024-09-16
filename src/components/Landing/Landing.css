@@ -1,0 +1,117 @@
+/* Container for the landing page */
+.landing__container {
+    width: 100%;
+    min-height: 420px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    background-color: #ffe26e;
+    position: relative;
+    padding: 20px; /* Added padding for better spacing */
+}
+
+/* Header link styling */
+.landing__header a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Container for the header section */
+.landing__header__container {
+    width: 40%;
+    min-height: 450px;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Header styling */
+.landing__header {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: center; /* Centered text for better alignment */
+}
+
+/* Main header text */
+.landing__header__main {
+    font-size: 4.0rem;
+    font-weight: 800;
+    margin-bottom: 10px; /* Added margin for spacing */
+    color: #333; /* Changed color for better readability */
+}
+
+/* Discount text styling */
+.landing__header__discount {
+    font-size: 1.2rem;
+    color: #666; /* Slightly lighter color for contrast */
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+/* Button styling */
+.landing__button {
+    width: 60%;
+    padding: 10px; /* Added padding for better click area */
+    cursor: pointer;
+    transition: background-color .3s, transform .3s;
+    background-color: #000; /* Added background color */
+    color: #fff; /* White text color */
+    border: none; /* Removed default border */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+
+.landing__button:hover {
+    background-color: #444; /* Darker color on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Container for the image */
+.landing__image__container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Image styling */
+.landing__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure image covers the container */
+    max-height: 500px; /* Set a maximum height */
+    z-index: 10;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 850px) {
+    .landing__image__container {
+        display: none; /* Hide image container on smaller screens */
+    }
+
+    .landing__header__container {
+        width: 100%; /* Full width on smaller screens */
+        text-align: center; /* Centered text */
+    }
+
+    .landing__header__main {
+        font-size: 3.0rem; /* Smaller font size */
+    }
+
+    .landing__header__discount {
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    .landing__button {
+        width: 80%; /* Wider button on smaller screens */
+    }
+}
